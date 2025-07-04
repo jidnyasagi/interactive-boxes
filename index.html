@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Pricing</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="heading-section">
+        <div class="line"></div>
+        <h2 class="bogo-heading">YAY! It’s BOGO</h2>
+        <div class="line"></div>
+      </div>
+
+      <form class="pricing-form">
+        <!-- 1 Unit -->
+        <div class="plan unit-one selected">
+          <label>
+            <input type="radio" name="unit" value="1" checked />
+            <div class="plan-content">
+              <div class="top-row">
+                <span class="unit">1 Unit</span>
+                <span class="badge pink">10% Off</span>
+                <div class="price">
+                  <span class="amount">$10.00 USD</span>
+                  <span class="strike">$24.00 USD</span>
+                </div>
+              </div>
+              <p class="sub">Standard Price</p>
+            </div>
+          </label>
+        </div>
+
+        <div class="plan popular expanded">
+          <label>
+            <input type="radio" name="unit" value="2" />
+            <div class="plan-content">
+              <!-- Ribbon -->
+              <div class="ribbon">MOST POPULAR</div>
+
+              <!-- Top Row -->
+              <div class="top-row">
+                <span class="unit">2 Unit</span>
+                <span class="badge pink">20% Off</span>
+                <div class="price">
+                  <span class="amount">$18.00 USD</span>
+                  <span class="strike">$24.00 USD</span>
+                </div>
+              </div>
+
+              <!-- Dropdowns -->
+              <div class="dropdowns">
+                <div class="dropdown-header">
+                  <span class="dropdown-title">Size</span>
+                  <span class="dropdown-title1">Colour</span>
+                </div>
+
+                <div class="row">
+                  <label>#1</label>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                  <select>
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Blue</option>
+                  </select>
+                </div>
+                <div class="row">
+                  <label>#2</label>
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                  <select>
+                    <option>Colour</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+
+        <!-- 3 Unit -->
+        <div class="plan">
+          <label>
+            <input type="radio" name="unit" value="3" />
+            <div class="plan-content">
+              <div class="top-row">
+                <span class="unit">3 Unit</span>
+                <span class="badge pink">30% Off</span>
+                <div class="price">
+                  <span class="amount">$24.00 USD</span>
+                  <span class="strike">$24.00 USD</span>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </form>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="delivery"><span class="red">Free Delivery</span></div>
+        <div class="total"><span class="total">Total : $18.00 USD</span></div>
+      </div>
+
+      <!-- Button -->
+      <button class="btn">+ Add to Cart</button>
+
+      <!-- Powered by -->
+      <p class="powered">@ Powered by Pumper</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

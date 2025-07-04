@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 450px;
+  margin: auto;
+
+  padding: 20px;
+  border-radius: 10px;
+}
+.heading-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.bogo-heading {
+  color: #ff6b82;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background-color: #c8c8c8;
+  opacity: 0.9;
+  max-width: 100px;
+}
+
+.plan {
+  border: 1px solid #c8c8c8;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 0.9px;
+  position: relative;
+  background: #fff;
+}
+
+.plan.popular {
+  border: 2px solid red;
+  background: #fff0f3;
+}
+
+.plan label {
+  display: flex;
+  cursor: pointer;
+}
+
+.plan input[type="radio"] {
+  margin-right: 15px;
+  transform: scale(1.3);
+  margin-top: 5px;
+}
+
+.plan-content {
+  flex: 1;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.unit {
+  line-height: 100%;
+  font-weight: 600;
+  size: 14px;
+  color: #000000;
+}
+.amount {
+  color: #000000;
+  font-weight: 500;
+  size: 14.46;
+  line-height: 100%;
+}
+.badge1 {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 1px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge2 {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 1px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 1px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 100px;
+}
+
+.pink {
+  background-color: #ff6b82;
+}
+
+.orange {
+  background-color: #ff6a00;
+}
+
+.price {
+  text-align: right;
+}
+
+.strike {
+  text-decoration: strikethrough;
+  font-size: 10px;
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  margin-right: 33px;
+}
+.plan.popular {
+  border: 2px solid #ff6b82;
+  background: #fff9fa;
+  position: relative;
+  padding-top: 20px;
+}
+
+.ribbon {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  background-color: #ff6b82;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(255, 107, 130, 0.4);
+  z-index: 1;
+}
+
+.plan input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ff6b82;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.plan input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff6b82;
+  border-radius: 50%;
+}
+
+.dropdown select {
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+}
+
+.sub {
+  font-size: 12px;
+  color: #000000;
+}
+
+.dropdowns {
+  margin-top: 15px;
+}
+.dropdown-header {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 42px; /* aligns with selects */
+  gap: 48px; /* spacing between Size and Colour */
+  margin-bottom: 6px;
+}
+
+.dropdown-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+.dropdown-title1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  margin-left: 83px;
+}
+.row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.row label {
+  width: 25px;
+}
+
+.row select {
+  flex: 1;
+  padding: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.red {
+  color: #ff6b82;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.total {
+  font-weight: 500;
+  line-height: 100%;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  background-color: #ff4d79;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.powered {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #00000066;
+  font-style: italic;
+}
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 15px;
+  }
+
+  .heading-section {
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .line {
+    max-width: 60px;
+  }
+
+  .top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .badge {
+    margin-right: 0;
+  }
+
+  .dropdown-header {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row label {
+    margin-bottom: 4px;
+  }
+
+  .row select {
+    width: 100%;
+  }
+
+  .plan label {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price {
+    text-align: left;
+    width: 100%;
+  }
+
+  .ribbon {
+    font-size: 10px;
+    padding: 3px 8px;
+    top: -10px;
+    right: 6px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+  }
+
+  .powered {
+    text-align: center;
+    margin-top: 16px;
+  }
+}
